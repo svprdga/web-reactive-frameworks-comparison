@@ -5,6 +5,7 @@ GRANT ALL PRIVILEGES ON DATABASE reactivecomp_db TO reactivecomp_user;
 
 -- Connect to the database: \connect reactivecomp_db;
 CREATE TABLE galaxy(id serial PRIMARY KEY, name VARCHAR(100), description VARCHAR(3000));
+GRANT ALL PRIVILEGES ON TABLE galaxy TO reactivecomp_user;
 
 -- Source: https://en.wikipedia.org/wiki/List_of_galaxies
 INSERT INTO galaxy(name, description) VALUES ('Andromeda Galaxy', 'Andromeda is the closest big galaxy to the Milky Way and is expected to collide with the Milky Way around 4 billion years from now. The two will eventually merge into a single new galaxy called Milkomeda.');
