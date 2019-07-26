@@ -3,7 +3,7 @@ import 'package:aqueduct_module/aqueduct_module.dart';
 Future main() async {
   final app = Application<AqueductModuleChannel>()
       ..options.configurationFilePath = "config.yaml"
-      ..options.port = 8888;
+      ..options.port = 8000;
 
   final count = Platform.numberOfProcessors ~/ 2;
   await app.start(numberOfInstances: count > 0 ? count : 1);
