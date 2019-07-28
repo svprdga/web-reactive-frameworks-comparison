@@ -1,0 +1,1 @@
+export { GalaxyController } from './galaxy.controller';
