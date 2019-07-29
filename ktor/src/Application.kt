@@ -9,8 +9,7 @@ import io.ktor.gson.*
 import io.ktor.features.*
 import io.ktor.client.*
 import io.ktor.client.engine.apache.*
-import me.liuwj.ktorm.database.Database
-import me.liuwj.ktorm.entity.findAll
+import org.jetbrains.exposed.sql.Database
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
@@ -27,9 +26,11 @@ fun Application.module(testing: Boolean = false) {
     val client = HttpClient(Apache) {
     }
 
+    val service = GalaxyService()
+
     routing {
         get("/galaxies") {
-            call.respond(Galaxies.findAll())
+            call.respond(service.getAllGalaxies())
         }
     }
 }
@@ -47,4 +48,8 @@ private fun getConnection(): HikariDataSource {
 
     return HikariDataSource(config)
 }
+
+
+
+
 
