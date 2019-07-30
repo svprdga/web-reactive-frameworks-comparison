@@ -6,7 +6,7 @@
     "strictNullChecks": true,
     "outDir": "./build",
     "sourceMap": true,
-    "types": ["reflect-metadata"],
+    "types": ["reflect-metadata", "node"],
     "typeRoots": ["node_modules/@types", "node_modules/*/dts/"],
     "lib": ["es2015", "es2017", "dom"],
     "experimentalDecorators": true,

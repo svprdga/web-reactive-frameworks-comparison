@@ -14,9 +14,9 @@ export class GalaxyServiceImpl implements GalaxyService {
     return new Promise((resolve, reject) => {
 
       this._database.getModel('Galaxy').findAll()
-        .then((result) => {
+        .then((result: any) => {
           resolve(result);
-        }).catch((error) => {
+        }).catch((error: any) => {
           reject(error);
         });
 

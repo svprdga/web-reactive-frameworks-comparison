@@ -1,3 +1,4 @@
+import { Request, Response } from 'express';
 import { controller, httpGet } from "inversify-express-utils";
 import { inject } from "inversify";
 import { TYPES_SERVICE } from "../service/abstraction/types";
