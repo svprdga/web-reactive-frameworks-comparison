@@ -1,9 +1,10 @@
 {
-  "name": "node-express",
+  "name": "node-express-sequelize",
   "version": "0.0.0",
   "description": "Node.js module with Express framework.",
   "main": "index.js",
   "scripts": {
+    "start": "node build/bootstrap.js",
     "build": "tsc",
     "build:live": "nodemon --ignore './uploads' --exec ./node_modules/.bin/ts-node -- ./src/bootstrap.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,23 +12,19 @@
   "author": "svprdga",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^4.11.1",
-    "@types/node": "^9.6.2",
-    "@types/sequelize": "^4.27.16",
-    "nodemon": "^1.17.3",
-    "ts-node": "^5.0.1",
-    "tslint": "^5.9.1"
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.8",
+    "@types/sequelize": "^4.27.4",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0"
   },
   "dependencies": {
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "inversify": "^4.11.1",
-    "inversify-express-utils": "^5.2.1",
-    "path": "^0.12.7",
+    "express": "^4.17.1",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
     "pg": "^7.12.0",
-    "reflect-metadata": "^0.1.12",
-    "request": "^2.88.0",
-    "sequelize": "^4.37.6",
-    "typescript": "^2.8.1"
+    "reflect-metadata": "^0.1.12",    
+    "sequelize": "^4.32.7",
+    "typescript": "^3.5.3"
   }
 }

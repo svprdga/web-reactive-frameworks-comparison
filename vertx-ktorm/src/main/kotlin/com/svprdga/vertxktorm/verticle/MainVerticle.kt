@@ -1,4 +1,4 @@
-package com.svprdga.vertxspring.verticle
+package com.svprdga.vertxktorm.verticle
 
 import io.vertx.core.AbstractVerticle
 import io.vertx.core.http.HttpMethod.GET

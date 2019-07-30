@@ -1,4 +1,4 @@
-package com.svprdga.reactivecomp.network
+package com.svprdga.vertxktorm.network
 
 import me.liuwj.ktorm.entity.Entity
 import me.liuwj.ktorm.schema.Table

@@ -1,8 +1,8 @@
-package com.svprdga.vertxspring.verticle
+package com.svprdga.vertxktorm.verticle
 
 import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.svprdga.reactivecomp.network.Galaxies
+import com.svprdga.vertxktorm.network.Galaxies
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import io.vertx.core.AbstractVerticle
@@ -12,7 +12,7 @@ import io.vertx.core.logging.LoggerFactory
 import me.liuwj.ktorm.database.Database
 import me.liuwj.ktorm.entity.findAll
 
-const val ALL_GALAXIES = "vertxspring.all.galaxies"
+const val ALL_GALAXIES = "vertxktorm.all.galaxies"
 
 class GalaxyVerticle(        )
     : AbstractVerticle() {

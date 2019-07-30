@@ -1,4 +1,4 @@
-package com.reactivecomp
+package com.svprdga.ktorexposed
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

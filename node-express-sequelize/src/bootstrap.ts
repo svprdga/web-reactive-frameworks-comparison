@@ -1,6 +1,5 @@
 import 'reflect-metadata';
 
-import * as cors from 'cors';
 import { Application } from 'express';
 import { Container } from 'inversify';
 import { InversifyExpressServer } from 'inversify-express-utils';
@@ -49,7 +48,6 @@ container.bind<GalaxyService>(TYPES_SERVICE.GalaxyService).to(GalaxyServiceImpl)
 const server = new InversifyExpressServer(container);
 
 server.setConfig((app: Application) => {
-  app.use(cors());
   app.use(bodyParser.json());  
 });
 

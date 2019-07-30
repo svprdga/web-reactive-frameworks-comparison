@@ -1,7 +1,7 @@
-package com.svprdga.reactivecomp
+package com.svprdga.vertxktorm
 
-import com.svprdga.vertxspring.verticle.GalaxyVerticle
-import com.svprdga.vertxspring.verticle.MainVerticle
+import com.svprdga.vertxktorm.verticle.GalaxyVerticle
+import com.svprdga.vertxktorm.verticle.MainVerticle
 import io.vertx.core.Vertx
 
 
