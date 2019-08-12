@@ -73,3 +73,50 @@ Create the database and populate its data using the setup_queries.sql file.
 ### Run vertx-spring
 * `cd vertx-spring`
 * `./gradlew run`
+
+## Test results
+
+* Tests were driven in a laptop with a i7-8750H CPU, SDRAM DDR4-2666, NVMe hard drive.
+* The benchmark tool used is [Artillery](https://artillery.io/).
+* The test consist in simulate 2000 users, each one performing 50 requests.
+
+The values measured are:
+* min: Minimal latency in milliseconds.
+* max: Maximum latency in milliseconds.
+* median: Arithmetic average of the latency, in milliseconds.
+* p95: 95th percentile value.
+* p99: 99th percentile value.
+
+### Aqueduct:
+* The server start good but stop responding after a while, tests for this server were canceled.
+
+### Ktor-Exposed:
+* min: 0.4
+* max: 122
+* median: 5.8
+* p95: 12.1
+* p99: 21
+
+### Node-Express-Sequelize
+* min: 0.4
+* max: 93
+* median: 1.6
+* p95: 7
+* p99: 9.4
+
+### Spring-Boot
+* min: 0.3
+* max: 101.8
+* median: 1.3
+* p95: 11.6
+* p99: 15
+
+### Vertx-Ktorm
+* min: 0.2
+* max: 91.4
+* median: 0.4
+* p95: 7
+* p99: 9
+
+### Vertx-Spring
+* Numbers for this server are extermely high, I think I am doing something wrong with this configuration, tests canceled.
