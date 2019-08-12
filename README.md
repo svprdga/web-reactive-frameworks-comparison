@@ -6,7 +6,7 @@ The requirements for the test are as follows:
 * The API must expose a *GET /galaxies* operation which will retrieve a list of galaxies form a PostgreSQL database.
 * Lots of projects in real life use some kind of database library to access the data instead of performing raw SQL queries, as this type of tools affects the performance of the application, each project must implement one of them.
 
-If you think that I am missing something to the take the best of each technology, pull requests are welcome.
+If you think that I am missing something to take the best of each technology, pull requests are welcome.
 
 ## Technologies under test
 
@@ -23,7 +23,7 @@ If you think that I am missing something to the take the best of each technology
 ### [Express](https://expressjs.com/)
 * Description: _Fast, unopinionated, minimalist web framework for Node.js_
 * Language: Typescript
-* Database lib: _[Sequelize](https://sequelize.org/) is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. _
+* Database lib: _[Sequelize](https://sequelize.org/) is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server._
 
 ### [Spring Boot](https://spring.io/projects/spring-boot)
 * Description: _Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run"._
